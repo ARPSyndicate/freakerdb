@@ -1,0 +1,101 @@
+wp-user-enum:
+  info: Wordpress user enumeration using `/wp-json/wp/v2/users` endpoint
+  path: exploits/wp-user-enum
+  requires: python3 bash curl jq tr sort
+  detections: "wordpress-user-enumeration"
+
+wadl-endpoints-enum:
+  info: Enumerates endpoints using wadl files
+  path: exploits/wadl-endpoints-enum
+  requires: python3 bash wadl-dumper
+  detections: "wadl-files:http-get"
+
+cve-2018-6389:
+  info: Wordpress Denial of Service
+  path: exploits/cve-2018-6389
+  requires: python3 bash python2
+  detections: "cve-2018-6389"
+
+cve-2020-3187:
+  info: Citrix directory traversal & remote code execution
+  path: exploits/cve-2020-3187
+  requires: python3 bash
+  detections: "cve-2020-3187"
+
+cve-2018-0296:
+  info: CISCO ASA path traversal
+  path: exploits/cve-2018-0296
+  requires: python3 bash
+  detections: "cve-2018-0296"
+
+cve-2020-3452:
+  info: CISCO ASA directory traversal
+  path: exploits/cve-2020-3452
+  requires: python3 bash
+  detections: "cve-2020-3452"
+
+cve-2017-6361:
+  info: QNAP QTS command injection in `authLogin.cgi`
+  path: exploits/cve-2017-6361
+  requires: python3 bash curl
+  detections: "cve-2017-6361"
+
+cve-2017-6360:
+  info: QNAP QTS command injection in `userConfig.cgi`
+  path: exploits/cve-2017-6360
+  requires: python3 bash curl
+  detections: "cve-2017-6360"
+
+x-host-header-injection:
+  info: Host Header injection using `X-Forwarded-Host`
+  path: exploits/x-host-header-injection
+  requires: python3 bash curl
+  detections: "host-header-injection"
+  
+host-header-injection:
+  info: Host Header injection using `Host`
+  path: exploits/host-header-injection
+  requires: python3 bash curl
+  detections: "host-injection"
+
+cve-2018-11784:
+  info: Apache Tomcat open redirect
+  path: exploits/cve-2018-11784
+  requires: python3 bash curl
+  detections: "cve-2018-11784"
+
+cve-2018-3760:
+  info: Rails path traversal
+  path: exploits/cve-2018-3760
+  requires: python3 bash curl
+  detections: "cve-2018-3760"
+
+cve-2020-8163:
+  info: Rails blind remote code exceution
+  path: exploits/cve-2020-8163
+  requires: python3 bash ruby
+  detections: "cve-2020-8163"
+
+cve-2020-5410:
+  info: Spring Cloud directory traversal
+  path: exploits/cve-2020-5410
+  requires: python3 bash curl
+  detections: "cve-2020-5410"
+
+cve-2020-5405:
+  info: Spring Cloud directory traversal
+  path: exploits/cve-2020-5405
+  requires: python3 bash curl
+  detections: "cve-2020-5405"
+
+cve-2020-25540:
+  info: ThinkAdmin arbitrary file read
+  path: exploits/cve-2020-25540
+  requires: python3 bash curl
+  detections: "cve-2020-25540"
+
+cve-2017-7529:
+  info: Nginx integer overflow
+  path: exploits/cve-2017-7529
+  requires: python3 bash
+  detections: "cve-2017-7529"
