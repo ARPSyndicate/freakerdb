@@ -99,3 +99,63 @@ cve-2017-7529:
   path: exploits/cve-2017-7529
   requires: python3 bash
   detections: "cve-2017-7529"
+
+cve-2020-25213:
+  info: WP-File-Manager unrestricted file upload
+  path: exploits/cve-2020-25213
+  requires: python3 bash
+  detections: "cve-2020-25213"
+
+cve-2020-14181:
+  info: Jira user enumeration
+  path: exploits/cve-2020-14181
+  requires: python3 bash
+  detections: "cve-2020-14181"
+
+cve-2020-14179:
+  info: Jira information leakage
+  path: exploits/cve-2020-14179
+  requires: python3 bash
+  detections: "cve-2020-14179"
+
+cve-2020-13379:
+  info: Grafana Denial of Service
+  path: exploits/cve-2020-13379
+  requires: python3 bash
+  detections: "cve-2020-13379"
+
+cve-2020-9047:
+  info: exacqVision remote code execution
+  path: exploits/cve-2020-9047
+  requires: python3 bash
+  detections: "cve-2020-9047"
+
+cve-2020-7473:
+  info: Citrix ShareFile StorageZones path traversal
+  path: exploits/cve-2020-7473
+  requires: python3 bash
+  detections: "cve-2020-7473"
+
+cve-2019-17558:
+  info: Apache Solr remote code execution
+  path: exploits/cve-2019-17558
+  requires: python3 bash
+  detections: "cve-2019-17558"
+
+cve-2019-11581:
+  info: Jira code injection
+  path: exploits/cve-2019-11581
+  requires: python3 bash python2
+  detections: "cve-2019-11581"
+
+cve-2019-7192:
+  info: QNAP remote code execution
+  path: exploits/cve-2019-7192
+  requires: python3 bash
+  detections: "cve-2019-7192"
+
+cve-2018-13379:
+  info: Fortigate Pulse Connect Secure path traversal
+  path: exploits/cve-2018-13379
+  requires: python3 bash
+  detections: "cve-2018-13379"
