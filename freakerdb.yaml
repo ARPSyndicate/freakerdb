@@ -177,3 +177,207 @@ cve-2017-0144:
   path: exploits/cve-2017-0144
   requires: python3 bash python2
   detections: "portenum|139||portenum|445"
+
+cve-2017-7921:
+  info: Hikvision IP Camera access bypass
+  path: exploits/cve-2019-7921
+  requires: python3 bash
+  detections: "cvescan|cve-2019-7921"
+
+cve-2013-2251:
+  info: Apache Struts 2 remote code execution
+  path: exploits/cve-2013-2251
+  requires: python3 bash
+  detections: "cvescan|cve-2013-2251"
+
+anchor:
+  info: Anchor CMS version fingerprint
+  path: fingerprints/anchor
+  requires: python3 bash nuclei
+  detections: "idscan|anchor-detect"
+
+apache:
+  info: Apache Webserver version fingerprint
+  path: fingerprints/apache
+  requires: python3 bash nuclei
+  detections: "idscan|apache-tomcat-detect||favscan|apache"
+
+bigtree:
+  info: Bigtree CMS version fingerprint
+  path: fingerprints/bigtree
+  requires: python3 bash nuclei
+  detections: "idscan|bigtree-detect"
+
+bolt:
+  info: Bolt version fingerprint
+  path: fingerprints/bolt
+  requires: python3 bash nuclei
+  detections: "idscan|bolt-detect"
+
+chamilo:
+  info: Chamilo LMS version fingerprint
+  path: fingerprints/chamilo
+  requires: python3 bash nuclei
+  detections: "idscan|chamilo-detect||favscan|chamilo"
+
+ckeditor:
+  info: CKeditor version fingerprint
+  path: fingerprints/ckeditor
+  requires: python3 bash nuclei
+  detections: "idscan|ckeditor-detect"
+
+cmsmadesimple:
+  info: CMSMadeSimple version fingerprint
+  path: fingerprints/cmsmadesimple
+  requires: python3 bash nuclei
+  detections: "idscan|cmsmadesimple-detect"
+
+concrete5:
+  info: Concrete5 version fingerprint
+  path: fingerprints/concrete5
+  requires: python3 bash nuclei
+  detections: "idscan|concrete5-detect"
+
+django:
+  info: Django version fingerprint
+  path: fingerprints/django
+  requires: python3 bash nuclei
+  detections: "idscan|django-detect"
+
+dnn:
+  info: DNN version fingerprint
+  path: fingerprints/dnn
+  requires: python3 bash nuclei
+  detections: "idscan|dnn-detect||favscan|dnn||favscan|dotnetnuke"
+
+drupal:
+  info: Drupal version fingerprint
+  path: fingerprints/drupal
+  requires: python3 bash nuclei
+  detections: "idscan|drupal-detect||favscan|drupal"
+
+fckeditor:
+  info: FCKeditor version fingerprint
+  path: fingerprints/fckeditor
+  requires: python3 bash nuclei
+  detections: "idscan|fckeditor-detect"
+
+flatcore:
+  info: Flatcore version fingerprint
+  path: fingerprints/flatcore
+  requires: python3 bash nuclei
+  detections: "idscan|flatcore-detect"
+
+joomla:
+  info: Joomla version fingerprint
+  path: fingerprints/joomla
+  requires: python3 bash nuclei
+  detections: "idscan|joomla-detect||favscan|joomla"
+
+laravel:
+  info: Laravel version fingerprint
+  path: fingerprints/laravel
+  requires: python3 bash nuclei
+  detections: "idscan|laravel-detect"
+
+liferay:
+  info: Liferay version fingerprint
+  path: fingerprints/liferay
+  requires: python3 bash nuclei
+  detections: "idscan|liferay-portal-detect||favscan|liferay"
+
+magento:
+  info: Magento version fingerprint
+  path: fingerprints/magento
+  requires: python3 bash nuclei
+  detections: "idscan|magento-detect||favscan|magento"
+
+mantisbt:
+  info: MantisBT version fingerprint
+  path: fingerprints/mantisbt
+  requires: python3 bash nuclei
+  detections: "idscan|mantisbt-detect||favscan|mantis"
+
+mediaelement:
+  info: Mediaelement version fingerprint
+  path: fingerprints/mediaelement
+  requires: python3 bash nuclei
+  detections: "idscan|mediaelement-detect"
+
+moodle:
+  info: Moodle version fingerprint
+  path: fingerprints/moodle
+  requires: python3 bash nuclei
+  detections: "idscan|moodle-detect||favscan|moodle"
+
+opencart:
+  info: Opencart version fingerprint
+  path: fingerprints/opencart
+  requires: python3 bash nuclei
+  detections: "idscan|opencart-detect"
+
+orchard:
+  info: Orchard CMS version fingerprint
+  path: fingerprints/orchard
+  requires: python3 bash nuclei
+  detections: "idscan|orchard-detect"
+
+oscommerce:
+  info: OSCommerce version fingerprint
+  path: fingerprints/oscommerce
+  requires: python3 bash nuclei
+  detections: "idscan|oscommerce-detect"
+
+phpmyadmin:
+  info: PHPMyAdmin version fingerprint
+  path: fingerprints/phpmyadmin
+  requires: python3 bash nuclei
+  detections: "idscan|phpmyadmin-panel||favscan|phpmyadmin"
+
+prestashop:
+  info: PrestaShop version fingerprint
+  path: fingerprints/prestashop
+  requires: python3 bash nuclei
+  detections: "idscan|prestashop-detect"
+
+punbb:
+  info: Punbb version fingerprint
+  path: fingerprints/punbb
+  requires: python3 bash nuclei
+  detections: "idscan|punbb-detect"
+
+roundcube:
+  info: Roundcube version fingerprint
+  path: fingerprints/roundcube
+  requires: python3 bash nuclei
+  detections: "idscan|roundcube-detect||favscan|roundcube"
+
+smf:
+  info: SimpleMachines SMF version fingerprint
+  path: fingerprints/smf
+  requires: python3 bash nuclei
+  detections: "idscan|smf-detect"
+
+tinymce:
+  info: TinyMCE version fingerprint
+  path: fingerprints/tinymce
+  requires: python3 bash nuclei
+  detections: "idscan|tinymce-detect"
+
+umbraco:
+  info: Umbraco version fingerprint
+  path: fingerprints/umbraco
+  requires: python3 bash nuclei
+  detections: "idscan|umbraco-detect"
+
+web2py:
+  info: Web2py version fingerprint
+  path: fingerprints/web2py
+  requires: python3 bash nuclei
+  detections: "idscan|web2py-detect"
+
+wordpress:
+  info: Wordpress version fingerprint
+  path: fingerprints/wordpress
+  requires: python3 bash nuclei
+  detections: "idscan|wordpress-detect||favscan|wordpress"

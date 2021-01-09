@@ -1,0 +1,1 @@
+nuclei -t signatures.yaml -target $1 -timeout 8 -rate-limit 200 -silent
