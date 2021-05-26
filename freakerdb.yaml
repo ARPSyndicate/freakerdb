@@ -387,3 +387,9 @@ gmaps-public-api:
   path: exploits/gmaps-public-api
   requires: python3 bash
   detections: "vulnscan|google-api-key"
+
+cve-2020-5221:
+  info: uFTPd directory traversal
+  path: exploits/cve-2020-5221
+  requires: python3 bash
+  detections: "servenum|ftp||portenum|21"
