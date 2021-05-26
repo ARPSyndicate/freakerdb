@@ -51,7 +51,7 @@ x-host-header-injection:
   path: exploits/x-host-header-injection
   requires: python3 bash curl
   detections: "vulnscan|host-header-injection"
-  
+
 host-header-injection:
   info: Host Header injection using `Host`
   path: exploits/host-header-injection
@@ -381,3 +381,9 @@ wordpress:
   path: fingerprints/wordpress
   requires: python3 bash nuclei
   detections: "idscan|wordpress-detect||favscan|wordpress"
+
+gmaps-public-api:
+  info: Publicly usable Google Maps API Leak
+  path: exploits/gmaps-public-api
+  requires: python3 bash
+  detections: "vulnscan|google-api-key"
